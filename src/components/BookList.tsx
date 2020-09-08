@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Book from './Book';
+import BookContainer from './BookContainer';
 import { IBook } from './Models';
 
 interface PropType {
@@ -9,7 +9,7 @@ interface PropType {
 class BookList extends Component<PropType> {
   render() {
     const bookList = this.props.books.map((book) => (
-      <Book key={book.id} {...book} />
+      <BookContainer key={book.id} {...book} />
     ));
     return <div className="booklist">{bookList}</div>;
   }

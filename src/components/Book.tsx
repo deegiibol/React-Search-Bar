@@ -1,7 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { addToWishlist } from '../redux/actions/bookActions';
-import { IBook } from './Models';
+import { BookProps } from './Models';
 
 const Book = (props: BookProps) => {
   const addBookToWishlist = () => {
@@ -11,7 +9,7 @@ const Book = (props: BookProps) => {
   return (
     <div className="book" onClick={() => addBookToWishlist()}>
       <div className="thumbnail">
-        <img src={props.imageLinks.smallThumbnail} />
+        <img src={props.imageLinks.smallThumbnail} alt="Imange not found" />
       </div>
       <div className="description">
         <h3>{props.title}</h3>
@@ -27,8 +25,4 @@ const Book = (props: BookProps) => {
   );
 };
 
-interface BookProps extends IBook {
-  addToWishlist(book: IBook): void;
-}
-
-export default connect(null, { addToWishlist })(Book);
+export default Book;

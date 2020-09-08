@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Book Component test renders as expected 1`] = `
+<div
+  className="book"
+  onClick={[Function]}
+>
+  <div
+    className="thumbnail"
+  >
+    <img
+      alt="Imange not found"
+      src=""
+    />
+  </div>
+  <div
+    className="description"
+  >
+    <h3>
+      Java
+    </h3>
+    <h5>
+      <span>
+        Author: 
+        Tom
+      </span>
+    </h5>
+    <span>
+      Published: 
+      Test
+       /
+      2015/10/13
+      /
+    </span>
+    <p>
+      Java Core
+    </p>
+  </div>
+</div>
+`;

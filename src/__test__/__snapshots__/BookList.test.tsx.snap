@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The BookList component test Should snapshot match 1`] = `ShallowWrapper {}`;

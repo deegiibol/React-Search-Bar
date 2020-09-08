@@ -15,3 +15,7 @@ export interface IBook {
   imageLinks: ImageLinks;
   language: string;
 }
+
+export interface BookProps extends IBook {
+  addToWishlist(book: IBook): void;
+}
