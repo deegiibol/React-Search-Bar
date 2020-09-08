@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.scss';
-import BookSearch from './book-search/BookSearch';
+import BookSearch from './components/BookSearch';
 
 function App() {
   return (

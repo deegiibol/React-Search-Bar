@@ -1,5 +1,5 @@
 import { ADD_TO_WISHLIST } from '../actions/actionTypes';
-import { IBook } from '../../book-search/Models';
+import { IBook } from '../../components/Models';
 
 const initialState: { [id: string]: IBook } = {};
 
